@@ -1,7 +1,9 @@
 extends "res://scripts/enemys/enemy.gd"
 
 func _ready():
-	pass # Replace with function body.
-	
+	self.scale *= 0.5
 func _physics_process(delta):
-	pass
+	self.position += delta * speed * self.position.direction_to(dir)
+	print(self.position.direction_to(dir)*10)
+	
+	
