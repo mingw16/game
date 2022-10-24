@@ -9,6 +9,9 @@ func _process(delta):
 	if health <=0:
 		queue_free()
 	if self.position.distance_to(dir) <10 :
+		# LIFE BAR # 
+		get_tree().call_group("LifeBar", "_addDamage", 10)
+		
 		queue_free()
 		
 		
