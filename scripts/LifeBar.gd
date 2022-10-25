@@ -11,3 +11,5 @@ func _addDamage(damage):
 		self.value -= damage
 		var stylebox = get("custom_styles/fg")
 		stylebox.bg_color.h = lerp(0, 0.3, value/100)
+	if value < 30:
+		$AnimationPlayer.play("warning")
