@@ -6,7 +6,7 @@
 [sub_resource type="DynamicFont" id=1]
 size = 45
 outline_size = 4
-outline_color = Color( 0.0980392, 0.0784314, 0.0784314, 1 )
+outline_color = Color( 0.620012, 0.083368, 0.083368, 1 )
 use_filter = true
 extra_spacing_char = 6
 font_data = ExtResource( 1 )
@@ -25,7 +25,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.0980392, 0.0784314, 0.0784314, 1 ), Color( 0.137255, 0.113725, 0.113725, 1 ), Color( 0.188235, 0.156863, 0.156863, 1 ), Color( 0.227451, 0.192157, 0.192157, 1 ), Color( 0.301961, 0.258824, 0.258824, 1 ), Color( 0.419608, 0.388235, 0.388235, 1 ), Color( 0.301961, 0.258824, 0.258824, 1 ), Color( 0.227451, 0.192157, 0.192157, 1 ), Color( 0.188235, 0.156863, 0.156863, 1 ), Color( 0.137255, 0.113725, 0.113725, 1 ), Color( 0.0980392, 0.0784314, 0.0784314, 1 ) ]
+"values": [ Color( 0, 0, 0, 1 ), Color( 0.105882, 0.0823529, 0.0823529, 1 ), Color( 0.262745, 0.117647, 0.117647, 1 ), Color( 0.309804, 0.152941, 0.152941, 1 ), Color( 0.576471, 0.109804, 0.109804, 1 ), Color( 0.686275, 0.0431373, 0.0431373, 1 ), Color( 0.576471, 0.109804, 0.109804, 1 ), Color( 0.309804, 0.152941, 0.152941, 1 ), Color( 0.262745, 0.117647, 0.117647, 1 ), Color( 0.105882, 0.0823529, 0.0823529, 1 ), Color( 0, 0, 0, 1 ) ]
 }
 
 [sub_resource type="StyleBoxFlat" id=3]
@@ -47,14 +47,13 @@ corner_radius_bottom_left = 10
 [node name="Score" type="Label" groups=[
 "Score",
 ]]
+modulate = Color( 1, 1, 1, 0.666667 )
 margin_left = 190.048
 margin_top = 3.68674
 margin_right = 400.048
 margin_bottom = 55.6867
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.886275, 0.882353, 0.913725, 1 )
-custom_colors/font_outline_modulate = Color( 1, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "00000"
 align = 1
 script = ExtResource( 2 )

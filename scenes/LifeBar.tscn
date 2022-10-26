@@ -46,10 +46,11 @@ tracks/0/keys = {
 }
 
 [node name="LifeBar" type="ProgressBar"]
-margin_left = 9.80676
-margin_top = 7.16531
-margin_right = 178.807
-margin_bottom = 42.1653
+modulate = Color( 1, 1, 1, 0.627451 )
+margin_left = 10.0
+margin_top = 7.0
+margin_right = 301.0
+margin_bottom = 42.0
 custom_styles/fg = SubResource( 1 )
 custom_styles/bg = SubResource( 2 )
 step = 1.0
